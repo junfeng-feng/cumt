@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `cumt`;
+CREATE TABLE `cumt` (
+  `accidentId` varchar(128) NOT NULL,
+  `accidentName` varchar(128) NOT NULL,
+  `country` varchar(128) NOT NULL,
+  `province` varchar(128) NOT NULL,
+  `accidentClass` varchar(128) NOT NULL,
+  `accidentType` varchar(128) NOT NULL,
+  `accidentDate` varchar(32) NOT NULL,
+  `accidentDescription` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
