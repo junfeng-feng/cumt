@@ -7,5 +7,7 @@ CREATE TABLE `cumt` (
   `accidentClass` varchar(128) NOT NULL,
   `accidentType` varchar(128) NOT NULL,
   `accidentDate` varchar(32) NOT NULL,
+  `accidentNoon` varchar(32) NOT NULL,
+  `accidentHour` varchar(32) NOT NULL,
   `accidentDescription` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

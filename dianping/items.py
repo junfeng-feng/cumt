@@ -18,7 +18,8 @@ class DianpingItem(scrapy.Item):
     accidentClass = scrapy.Field()
     accidentType = scrapy.Field()
     accidentDate = scrapy.Field()  
-
+    accidentNoon = scrapy.Field()
+    accidentHour = scrapy.Field()  
 
     accidentDescription = scrapy.Field()     
     pass

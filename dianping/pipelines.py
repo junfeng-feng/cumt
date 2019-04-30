@@ -11,9 +11,9 @@ class DianpingPipeline(object):
         self.dbargs = dbargs
         
         self.insertQuestionSql = r"""INSERT INTO `cumt` 
-        (`accidentId`,`accidentName`,`country`,`province`,`accidentClass`,`accidentType`,`accidentDate`,`accidentDescription` ) 
+        (`accidentId`,`accidentName`,`country`,`province`,`accidentClass`,`accidentType`,`accidentDate`,`accidentNoon`,`accidentHour`,`accidentDescription` ) 
         VALUES 
-        (%s, %s, %s, %s, %s, %s, %s, %s);
+        (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
 """
     
     def open_spider(self, spider):
@@ -51,6 +51,8 @@ class DianpingPipeline(object):
             item['accidentClass'],
             item['accidentType'],
             item['accidentDate'],
+            item['accidentNoon'],
+            item['accidentHour'],
             item['accidentDescription']
             ))
         except Exception as e:
